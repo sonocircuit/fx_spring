@@ -37,10 +37,8 @@ local FxSpring = fx:new{
 }
 
 
-Fx:add_control(id, name, key, spec)
-
 function FxSpring:add_params()
-    params:add_group("fx_spring", "fx spring", 4)
+    params:add_group("fx_spring", "fx spring", 5)
     FxSpring:add_slot("fx_spring_slot", "slot")
     FxSpring:add_taper("fx_spring_predelay", "predelay", "predelay", 0, 1, 0.015, 1, "s")
     FxSpring:add_taper("fx_spring_room", "room", "room", 0, 1, 0.5, 1, "")
